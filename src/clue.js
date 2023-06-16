@@ -96,9 +96,7 @@ function selectRandom(selectArray) {
     }
 
 function pickMystery() {
-    let room = selectRandom(roomsArray);
-    let suspect = selectRandom(suspectsArray);
-    let weapon = selectRandom(weaponsArray);
+    let [room,suspect,weapon] = [selectRandom(roomsArray),selectRandom(suspectsArray),selectRandom(weaponsArray)];
     return {'suspect':suspect,
             'weapon':weapon,
             'room':room}
